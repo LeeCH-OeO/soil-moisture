@@ -20,7 +20,7 @@ export default function NewData(){
 
     return(
         <div>
-            <input type="text" onChange={handleDataOnChange} value={number}></input>
+            <input type="number" onChange={handleDataOnChange} value={number} ></input>
             
             <button onClick={createNumber}>add number</button>
         </div>
