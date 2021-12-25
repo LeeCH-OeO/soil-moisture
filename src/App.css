@@ -3,10 +3,19 @@
 }
 .currentData{
     text-align: center;
+    padding:0.5%;
 }
 .allData{
     text-align: center;
     width: auto;
-    height: auto
+    height: auto;
+    padding:0.5%;
+    
+}
+.chart{
+    text-align: center;
+}
+.footer{
+    text-align: center;
 }
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&display=swap');

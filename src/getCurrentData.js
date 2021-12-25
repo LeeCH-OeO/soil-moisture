@@ -24,7 +24,7 @@ function GetData(){
             
             <div className="currentData">
                 <Typography variant="h3" gutterBottom>
-                    Current: { sensorData ? sensorData[sensorData.length-1].moisture  :""} 
+                    Current humidity: { sensorData ? sensorData[sensorData.length-1].moisture  :""} 
                 </Typography>
                 <Typography variant="h4" gutterBottom>
                     Time: {sensorData ? sensorData[sensorData.length-1].time  :""}
