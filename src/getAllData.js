@@ -12,7 +12,7 @@ export default function GetAllData(){
         const getNumber = snapshot.val()
         const numberList = []
         for(let id in getNumber){
-            numberList.unshift(getNumber[id]) //adds new elements to the beginning of an array.
+            numberList.unshift(getNumber[id]) //adds new elements to the beginning of an array
         }
         setSensorData(numberList)
         
