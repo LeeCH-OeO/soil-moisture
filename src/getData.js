@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { getDatabase, ref, onValue} from "firebase/database";
 import myFirebase from "./firebase";
+import Typography from '@mui/material/Typography';
+import { typography } from "@mui/system";
+
 const database = getDatabase(myFirebase)
 
 export default function GetData(){
@@ -14,18 +17,19 @@ export default function GetData(){
             numberList.push(getNumber[id].moisture)
         }
         setSensorData(numberList)
-        console.log(numberList)
+        console.log()
         })
     }, [])
     return(
         
         <div>
             <div className="currentData">
-                <h1>current: {sensorData[sensorData.length-1]}</h1>
+                <Typography variant="h3" gutterBottom>Current: {sensorData[sensorData.length-1]}</Typography>
             </div>
 
             <div className="allData">
-                {sensorData ? sensorData.map((i)=><p>{i}</p>):""}
+                <Typography variant="h3" gutterBottom>History </Typography>
+                {sensorData ? sensorData.map((i)=> <Typography variant="h6" >{i}</Typography>):""}
             </div>
             
         </div>
