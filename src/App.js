@@ -1,16 +1,27 @@
 import Typography from '@mui/material/Typography';
-
+import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import ErrorPage from './errorPage';
 import NewData from "./new";
-import GetData from "./getData";
+import {GetData} from "./getCurrentData";
+import { GetChart } from './getCahrt';
 import "./App.css"
 function App() {
 
   return (
-    <div className="App">
+    <BrowserRouter>
       <Typography className='header' variant="h1" gutterBottom style={{'fontFamily': 'Noto Serif TC', 'color':'red'}} >土壤濕度監測</Typography>
       <NewData/>
-      <GetData />
-    </div>
+      <nav>
+        <Link to="/soil-moisture">Home Page</Link>
+        <Link to="/soil-moisture/Chart" > Chart</Link>
+      </nav>
+      <Routes>
+        <Route path="/soil-moisture" element={<GetData/>} />
+        <Route path="/soil-moisture/Chart" element={<GetChart/>} />
+        <Route path="*" element={<ErrorPage/>} />
+      </Routes>
+    </BrowserRouter>
+    
   );
 }
 

@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
 import { getDatabase, ref, onValue} from "firebase/database";
 import myFirebase from "./firebase";
-import Typography from '@mui/material/Typography';
 import { AreaChart, Area, CartesianGrid, XAxis, YAxis, Tooltip} from 'recharts';
 
 const database = getDatabase(myFirebase)
-
-export default function GetData(){
+function GetChart(){
     const[sensorData, setSensorData] = useState('')
 
     useEffect(()=>{
@@ -23,10 +21,6 @@ export default function GetData(){
     return(
         
         <div>
-            <div className="currentData">
-                <Typography variant="h3" gutterBottom>Current: { sensorData ? sensorData[sensorData.length-1].moisture  :""}</Typography>
-            </div>
-
             <div className="allData">
                 
                     <AreaChart width={1800} height={800} data={sensorData}>
@@ -36,8 +30,8 @@ export default function GetData(){
                     <YAxis dataKey="moisture"/>
                     <Tooltip />
                     </AreaChart>             
-            </div>
-            
+            </div>            
         </div>
     )
 }
+export{GetChart}
