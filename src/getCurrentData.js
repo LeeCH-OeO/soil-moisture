@@ -23,10 +23,10 @@ function GetData(){
         <div>
             
             <div className="currentData">
-                <Typography variant="h3" gutterBottom>
+                <Typography variant="h3" gutterBottom style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '900'}}>
                     Current humidity: { sensorData ? sensorData[sensorData.length-1].moisture  :""} 
                 </Typography>
-                <Typography variant="h4" gutterBottom>
+                <Typography variant="h4" gutterBottom style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '700'}}>
                     Time: {sensorData ? sensorData[sensorData.length-1].time  :""}
                 </Typography>
             </div>

@@ -11,9 +11,10 @@ import { ButtonGroup, Button } from '@mui/material';
 function App() {
 
   return (
+    
     <BrowserRouter>
       <div className='header'>
-        <Typography  variant="h1" gutterBottom style={{'fontFamily': 'Noto Serif TC', 'color':'red'}} >土壤濕度監測</Typography>
+        <Typography  variant="h1" gutterBottom style={{'fontFamily': 'Noto Serif  TC', 'fontWeight': '900'}}>土壤濕度監測</Typography>
         <NewData/>
         <ButtonGroup variant="outlined">
           <Button><Link to="/soil-moisture">Home Page</Link></Button>
