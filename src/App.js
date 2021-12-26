@@ -15,7 +15,6 @@ function App() {
     <BrowserRouter>
       <div className='header'>
         <Typography  variant="h1" gutterBottom style={{'fontFamily': 'Noto Serif  TC', 'fontWeight': '900'}}>土壤濕度監測</Typography>
-        <NewData/>
         <ButtonGroup variant="outlined" >
           <Button ><Link to="/soil-moisture" style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '400'}}>Home Page</Link></Button>
           <Button><Link to="/soil-moisture/Chart" style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '400'}}> Chart</Link></Button>
