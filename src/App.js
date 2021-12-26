@@ -30,7 +30,7 @@ function App() {
       </Routes>
       <div className='footer'>
         <a href="https://github.com/LeeCH-OeO/soil-moisture" target="_blank" rel="noreferrer">
-          <Typography variant='subtitle2'>©LeeCH-OeO</Typography> 
+          <Typography variant='subtitle2' style={{'fontFamily': 'Noto Serif  TC', 'fontWeight': '700'}}>©LeeCH-OeO</Typography> 
         </a>
       </div>
     </BrowserRouter>
