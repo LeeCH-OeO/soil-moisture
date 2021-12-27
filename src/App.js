@@ -14,11 +14,11 @@ function App() {
     
     <BrowserRouter>
       <div className='header'>
-        <Typography  variant="h1" gutterBottom style={{'fontFamily': 'Noto Serif  TC', 'fontWeight': '900'}}>土壤濕度監測</Typography>
-        <ButtonGroup variant="outlined" >
-          <Button ><Link to="/soil-moisture" style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '400'}}>Home Page</Link></Button>
-          <Button><Link to="/soil-moisture/Chart" style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '400'}}> Chart</Link></Button>
-          <Button><Link to="/soil-moisture/History" style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '400'}}> History</Link></Button>
+        <Typography  variant="h1" gutterBottom style={{'fontFamily': 'Noto Serif  TC', 'fontWeight': '900', 'color':'red'}}>土壤濕度監測</Typography>
+        <ButtonGroup variant="outlined" color="error">
+          <Button ><Link to="/soil-moisture" style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '400', 'color':'red'}}>Home Page</Link></Button>
+          <Button><Link to="/soil-moisture/Chart" style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '400', 'color':'red'}}> Chart</Link></Button>
+          <Button><Link to="/soil-moisture/History" style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '400', 'color':'red'}}> History</Link></Button>
         </ButtonGroup>
       </div> 
       <Routes>
@@ -28,8 +28,8 @@ function App() {
         <Route path="/soil-moisture/*" element={<ErrorPage/>} />
       </Routes>
       <div className='footer'>
-        <a href="https://github.com/LeeCH-OeO/soil-moisture" target="_blank" rel="noreferrer">
-          <Typography variant='subtitle2' style={{'fontFamily': 'Noto Serif  TC', 'fontWeight': '700'}}>©LeeCH-OeO</Typography> 
+        <a href="https://github.com/LeeCH-OeO/soil-moisture" target="_blank" rel="noreferrer" >
+          <Typography variant='subtitle2' style={{'fontFamily': 'Noto Serif  TC', 'fontWeight': '700', 'color':'red'}}>©LeeCH-OeO</Typography> 
         </a>
       </div>
     </BrowserRouter>

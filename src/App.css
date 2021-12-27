@@ -1,26 +1,28 @@
 .header{
     text-align: center;
-    
+    padding:0.5%;
 }
 
 .currentData{
     text-align: center;
-    padding:0.5%;
+   
 }
 .allData{
     text-align: center;
     width: auto;
     height: auto;
-    padding:0.5%;
+    
 }
 .chart{
+    
     text-align: center;
 }
 .footer{
     text-align: center;
+   
 }
 html, body, #root{
-    background-color: #40E0D0
+    background-color: black
 }
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap');

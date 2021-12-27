@@ -21,7 +21,7 @@ export default function GetAllData(){
     return(
         
         <div className="allData">
-            {sensorData ? sensorData.map((i)=> <Typography variant="h6" style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '400'}}>humidity: {i.moisture}, time: {i.time}</Typography>):""}
+            {sensorData ? sensorData.map((i)=> <Typography variant="h6" style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '400', 'color':'white'}}>humidity: {i.moisture}, time: {i.time}</Typography>):""}
         </div>
     )
 }
