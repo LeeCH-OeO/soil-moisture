@@ -24,7 +24,7 @@ function GetChart(){
             <div className="chart">
                 
                     <AreaChart width={1800} height={700} data={sensorData}>
-                    <Area type="monotone" dataKey="moisture" stroke="#000000" fill="#ff0000" activeDot={{ r: 3 }}/>
+                    <Area type="monotone" dataKey="moisture" stroke="#ff0000" fill="#660000" activeDot={{ r: 3 }}/>
                     <CartesianGrid stroke="#ccc" />
                     <XAxis dataKey="time"/>
                     <YAxis dataKey="moisture"/>
