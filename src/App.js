@@ -9,7 +9,9 @@ import GetAllData from './getAllData';
 import "./App.css"
 import { ButtonGroup, Button } from '@mui/material';
 function App() {
-
+  if (navigator.maxTouchPoints > 1) {
+    alert('您正在使用手機📱瀏覽\n建議使用電腦🖥️以獲得最佳體驗');
+}
   return (
     
     <HashRouter>
