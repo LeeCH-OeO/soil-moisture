@@ -6,7 +6,6 @@ import { AreaChart, Area, CartesianGrid, XAxis, YAxis, Tooltip} from 'recharts';
 const database = getDatabase(myFirebase)
 function GetChart(){
     const[sensorData, setSensorData] = useState('')
-
     useEffect(()=>{
         onValue(ref(database, "data"), (snapshot)=>{
         const getNumber = snapshot.val()
