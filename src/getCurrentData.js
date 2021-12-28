@@ -12,7 +12,10 @@ function GetData(){
         const getNumber = snapshot.val()
         const numberList = []
         for(let id in getNumber){
-            numberList.push(getNumber[id])
+            if(getNumber[id].time!=="0"){
+                numberList.push(getNumber[id])
+            }
+            
         }
         setSensorData(numberList)
         
