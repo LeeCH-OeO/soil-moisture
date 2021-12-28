@@ -16,11 +16,11 @@ function App() {
     
     <HashRouter>
       <div className='header'>
-        <Typography  variant="h1" gutterBottom style={{'fontFamily': 'Noto Serif  TC', 'fontWeight': '900', 'color':'red'}}>土壤濕度監測</Typography>
-        <ButtonGroup variant="outlined" color="error">
-          <Button ><Link to="/" style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '400', 'color':'red'}}>Home Page</Link></Button>
-          <Button><Link to="/Chart" style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '400', 'color':'red'}}> Chart</Link></Button>
-          <Button><Link to="/History" style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '400', 'color':'red'}}> History</Link></Button>
+        <Typography  variant="h1" gutterBottom style={{'fontFamily': 'Noto Serif  TC', 'fontWeight': '900'}}>土壤濕度監測</Typography>
+        <ButtonGroup variant="outlined" >
+          <Button ><Link to="/" style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '400'}}>Home Page</Link></Button>
+          <Button><Link to="/Chart" style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '400'}}> Chart</Link></Button>
+          <Button><Link to="/History" style={{'fontFamily': 'Noto Sans  TC', 'fontWeight': '400'}}> History</Link></Button>
         </ButtonGroup>
       </div> 
       <Routes >
