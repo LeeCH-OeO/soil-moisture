@@ -14,6 +14,7 @@ function GetChart(){
             if(getNumber[id].time!=="0"){
                 numberList.push(getNumber[id])
             }
+            
         }
         setSensorData(numberList)
         
@@ -25,10 +26,10 @@ function GetChart(){
             <div className="chart">
                 
                     <AreaChart width={1800} height={700} data={sensorData}>
-                    <Area type="monotone" dataKey="moisture" stroke="#000000"  activeDot={{ r: 3 }}/>
+                    <Area type="monotone" dataKey="humidity" stroke="#000000"  activeDot={{ r: 3 }}/>
                     <CartesianGrid stroke="#ccc" />
                     <XAxis dataKey="time"/>
-                    <YAxis dataKey="moisture"/>
+                    <YAxis dataKey="humidity"/>
                     <Tooltip />
                     </AreaChart>             
             </div>            
