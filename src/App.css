@@ -20,7 +20,8 @@
     text-align: center;
 }
 .footer{
-    text-align: center;
+    
+    display: flex;
    
 }
 html, body, #root{

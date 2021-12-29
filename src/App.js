@@ -30,7 +30,7 @@ function App() {
         <Route path="/*" element={<ErrorPage/>} />
       </Routes>
       <div className='footer'>
-        <a href="https://github.com/LeeCH-OeO/soil-moisture" target="_blank" rel="noreferrer" >
+        <a href="https://github.com/LeeCH-OeO/soil-moisture" target="_blank" rel="noreferrer" style={{ "margin": "auto"}}>
           <Typography variant='subtitle2' style={{'fontFamily': 'Noto Serif  TC', 'fontWeight': '700', 'color':'red'}}>©LeeCH-OeO</Typography> 
         </a>
       </div>
